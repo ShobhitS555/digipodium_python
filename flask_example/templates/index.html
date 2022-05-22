@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <h3 class="text-center p-3">developer weekly</h3>
+            <form method="post" class="card">
+                <div class="card-body">
+                    {% include "notify.html" %}
+                    <div class="mb3">
+                        <label for="website">website url</label>
+                        <input type="url"class="form-control"id="website" name="website">
+                    </div>
+                    <div class="mb-3">
+                        <label for="website">website title</label>
+                        <input type="url"class="form-control"id="title" name="title">
+                    </div>
+                    <div>
+                        <label>"Website Category"</label>
+                            <select>
+                                name="category" id="category" class="fprm-select">
+                                <option>select Category</option>
+                                <option>Paython</option>
+                                <option>java</option>
+                                <option>AI</option>
+                            </select>
+                        
+                    </div>
+                    <br>
+                    <div>
+                        <button>Save and continue</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</container>
+{% endblock %}
+
